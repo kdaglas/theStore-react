@@ -1,20 +1,22 @@
 module.exports = {
     "parser": "babel-eslint",
     "env": {
-        "browser": true,
-        "node": true
+      "browser": true,
+      "node": true,
+      "jest": true
     },
     "extends": "airbnb",
     "plugins": [
-        "react",
-        "jsx-ally",
-        "import"
+      "react",
+      "jsx-ally",
+      "import"
     ],
     "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module",
       "ecmaFeatures": {
         "jsx": true
-      },
-      "ecmaVersion": 6
+      }
     },
     "rules": {
       "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
