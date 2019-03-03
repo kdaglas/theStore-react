@@ -1,5 +1,10 @@
 # theStore-react
 
+[![Build Status](https://travis-ci.com/kdaglas/theStore-react.svg?branch=develop)](https://travis-ci.com/kdaglas/theStore-react)
+[![Reviewed by Hound](https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg)](https://houndci.com)
+
+[![Maintainability](https://api.codeclimate.com/v1/badges/57ff2c01e8431506d260/maintainability)](https://codeclimate.com/github/kdaglas/theStore-react/maintainability)
+
 Bootcamp challenge into react.
 
 # theStore
