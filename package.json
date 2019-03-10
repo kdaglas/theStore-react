@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Bootcamp challenge into react.",
   "main": "index.js",
+  "engines": {
+    "node": "10.15.1"
+  },
   "scripts": {
     "start": "webpack-dev-server --open --mode development --hot --https",
     "build": "webpack --mode production --open --hot",
@@ -27,6 +30,7 @@
     "@babel/cli": "^7.2.3",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
+    "react-router-dom": "^4.3.1",
     "yarn": "^1.13.0"
   },
   "devDependencies": {
@@ -36,8 +40,8 @@
     "@babel/polyfill": "^7.0.0-beta.51",
     "@babel/preset-env": "^7.3.1",
     "@babel/preset-react": "^7.0.0",
-    "babel-loader": "^8.0.5",
     "babel-jest": "^24.1.0",
+    "babel-loader": "^8.0.5",
     "copy-webpack-plugin": "^4.5.1",
     "css-loader": "^2.1.0",
     "enzyme": "^3.8.0",

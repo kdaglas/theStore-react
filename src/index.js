@@ -1,12 +1,26 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter, Route } from 'react-router-dom'
 import './assets/style.scss';
 import './assets/css/style.css';
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import About from './components/About';
+import Contact from './components/Contact';
 
-const App = () => (
-    <div>
-      <h2>Welcome to My store manager.</h2>
-    </div>
-);
+class App extends Component {
+  render() {
+    return (
+      <BrowserRouter>
+        <div className='app'>
+          <Navbar />
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/contact" component={Contact} />
+        </div>
+      </BrowserRouter>
+    )
+  }
+}
 
 ReactDOM.render(<App />, document.getElementById('root'));
