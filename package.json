@@ -13,7 +13,9 @@
     "test:watch": "jest --watch",
     "test:coverage": " jest --collectCoverage",
     "lint": "eslint . --ignore-path .gitignore",
-    "lint:fix": "eslint . --fix --ignore-path .gitignore"
+    "lint:fix": "eslint . --fix --ignore-path .gitignore",
+    "heroku-prebuild": "npm install yarn && yarn install ",
+    "heroku-postbuild": "yarn run build"
   },
   "repository": {
     "type": "git",
