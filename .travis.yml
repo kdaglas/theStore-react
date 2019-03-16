@@ -18,4 +18,5 @@ script:
 
 after_script:
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+  - COVERALLS-REPO-TOKEN=$coveralls_repo_token yarn coveralls
   

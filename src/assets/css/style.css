@@ -1,3 +1,264 @@
-h2{
+/*    ----    css for the background ----   */
+html, body{
+    background-image: url(https://res.cloudinary.com/dgjlsw4uw/image/upload/v1552703829/white.jpg);
+}
+
+/*    ----   layout css for login page  ----   */
+.login_box{
+    margin: 110px auto;
+    width:57%;
+    height: 420px;
+    text-align: center;
+    background-color: #ffffffd3;
+    box-shadow: 0 7px 50px rgba(0,0,0,.3);
+}
+.desscription{
+    float: left;
+    margin: -55px 0;
+    /* margin: -55px 0 0 45px; */
+}
+.heading p{
+    color: #211d1e;
+    font-size: 18px;
+}
+.fillups{
+    float: right;
+    padding: 15px;
+    margin: 7px 0;
+    /* margin: 7px 45px 0 0; */
+}
+.holder{
+    width: 650px;
+    margin: 0 auto;
+}
+
+
+/*    ----    css form  ----   */
+form{
+    width: 250px;
+    margin: 20px auto;
+}
+form .input-field input,
+form .input-field select{
+    margin: 15px 0 0 0;
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    color: #777;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+form .input-field input:focus,
+form .input-field input:valid,
+form .input-field select:focus {
+    border-bottom: 1px solid #F9AD20;
+    transition: 0.5s;
+}
+form .input-field input[type="submit"] {
+    border: 1px solid #F9AD20;
+    font-weight: bold;
+    background-color: #F9AD20;
+    border-radius:25px;
+    color: #fff;
+    width: 120px;
+    transition: 0.5s;
+}
+form .input-field input[type="submit"]:hover {
+    background-color: transparent;
+    border: 1px solid #F9AD20;
+    color: #F9AD20;
+    transition: 0.5s;
+}
+form .input-field select option{
+    padding: 20px;
+    background-color: #fff;
+    color: #F9AD20;
+    border: none;
+    outline: none;
+}
+
+.error-message{
     color: red;
 }
+
+/* ### Media queries for responsiveness */
+
+/* ------ Most of the Smartphones Mobiles ------- */
+@media (min-width: 190px) and (max-width: 319px) {
+
+    /*    the design for the index page   */
+    .login_box{
+        margin: 150px 0;
+        width:100%;
+        height: 100vh;
+    }
+    .desscription{
+        float: none;
+    }
+    .desscription img{
+        height: 300px;
+        margin: -50px 0 0 0;
+    }
+    .fillups{
+        float: none;
+        margin: 50px 0;
+    }
+    .holder{
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    /*    the design for the index page   */
+    .login_box{
+        margin: 150px auto;
+        width:100%;
+        height: 117vh;
+    }
+    .desscription{
+        float: none;
+    }
+    .desscription img{
+        height: 400px;
+        margin: -50px 0 0 0;
+    }
+    .fillups{
+        float: none;
+        margin: 50px 0;
+    }
+    .holder{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+}
+
+/* ------ Most of the Smartphones Mobiles ------- */
+@media (min-width: 481px) and (max-width: 767px) {
+
+    /*    the design for the index page   */
+    .login_box{
+        margin: 150px auto;
+        width:100%;
+        height: 130vh;
+    }
+    .desscription{
+        float: none;
+    }
+    .desscription img{
+        height: 500px;
+        margin: -50px 0 0 0;
+    }
+    .fillups{
+        float: none;
+        margin: 50px 0;
+    }
+    .holder{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* ---- footer layout ----   */
+    footer{
+        float: none;
+        clear: both;
+        text-align: center;
+        padding: 27px 12px 30px 12px;
+        background: #fbf9f966;
+    }
+
+}
+
+/* ---- Most of the Tablets, Ipads ----- */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /*    the design for the sign up page   */
+    /* .login_box{
+        width:90%;
+    }
+    .desscription{
+        margin: -55px 0 0 37px;
+    }
+    .desscription img{
+        height: 500px;
+    }
+    .fillups{
+        margin: 7px 37px 0 0;
+    } */
+
+}
+
+/* ---- Most of the Tablets, Ipads ----- */
+@media (min-width: 768px) and (max-width: 869px) {
+
+    /*******the login page*******/
+    .login_box{
+        width:90%;
+    }
+    .desscription{
+        margin: -55px 0 0 0;
+    }
+    .desscription img{
+        height: 500px;
+    }
+    .fillups{
+        margin: 7px 0 0 0;
+    }
+    .holder{
+        width: 650px;
+        margin: 0 auto;
+    }
+
+}
+
+/* ---- Most of the betweens ----- */
+@media (min-width: 870px) and (max-width: 1024px) {
+
+    .login_box{
+        width:80%;
+    }
+    .desscription{
+        margin: -55px 0 0 0;
+    }
+    .desscription img{
+        height: 500px;
+    }
+    .fillups{
+        margin: 7px 0 0 0;
+    }
+    .holder{
+        width: 650px;
+        margin: 0 auto;
+    }
+
+}
+
+/* ---- Most of the laptops or desktops ----- */
+@media (min-width: 1025px) and (max-width: 1268px) {
+
+    .login_box{
+        width:70%;
+    }
+    .desscription{
+        margin: -55px 0 0 0;
+    }
+    .desscription img{
+        height: 500px;
+    }
+    .fillups{
+        margin: 7px 0 0 0;
+    }
+    .holder{
+        width: 650px;
+        margin: 0 auto;
+    }
+}
+
+  
+
