@@ -1,19 +1,19 @@
-const Dotenv = require('dotenv-webpack');
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const Dotenv = require("dotenv-webpack");
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  entry: ['./src/index.js'],
+  entry: ["./src/index.js"],
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    publicPath: '/',
-    filename: 'bundle.js',
+    path: path.resolve(__dirname, "dist"),
+    publicPath: "/",
+    filename: "bundle.js"
   },
   resolve: {
-    extensions: ['.js', '.jsx'],
+    extensions: [".js", ".jsx"]
   },
   node: {
-    fs: 'empty',
+    fs: "empty"
   },
   module: {
     rules: [
@@ -21,38 +21,30 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader',
-        },
+          loader: "babel-loader"
+        }
       },
       {
         test: /\.scss$/,
-        use: [
-          'style-loader',
-          'css-loader',
-          'sass-loader',
-        ],
+        use: ["style-loader", "css-loader", "sass-loader"]
       },
       {
         test: /\.css$/,
-        use: [
-          'style-loader',
-          'css-loader',
-        ],
-      },
-    ],
+        use: ["style-loader", "css-loader"]
+      }
+    ]
   },
   plugins: [
     new Dotenv({
-      path: path.resolve(__dirname, '.env'),
-      systemvars: true,
+      path: path.resolve(__dirname, ".env"),
+      systemvars: true
     }),
-    new HtmlWebpackPlugin({ 
-      template: './src/index.html', 
-      filename: './index.html' 
-    }),
+    new HtmlWebpackPlugin({
+      template: "./src/index.html"
+    })
   ],
   devServer: {
     hot: true,
-    historyApiFallback: true,
-  },
+    historyApiFallback: true
+  }
 };
