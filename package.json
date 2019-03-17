@@ -7,16 +7,16 @@
     "node": "10.15.1"
   },
   "scripts": {
-    "start": "webpack-dev-server --open --mode development --hot --https",
-    "build": "webpack --mode production --open --hot",
+    "start": "webpack-dev-server --open --mode development",
+    "build": "webpack --mode production",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": " jest --collectCoverage",
     "lint": "eslint . --ignore-path .gitignore",
     "lint:fix": "eslint . --fix --ignore-path .gitignore",
-    "heroku-prebuild": "npm install yarn && yarn install ",
-    "heroku-postbuild": "yarn run build"
+    "heroku-postbuild": "npm run build"
   },
+  "heroku-run-build-script": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kdaglas/theStore-react.git"
@@ -38,8 +38,7 @@
     "react-router-dom": "^4.3.1",
     "redux": "^4.0.1",
     "redux-devtools-extension": "^2.13.8",
-    "redux-thunk": "^2.3.0",
-    "yarn": "^1.13.0"
+    "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
