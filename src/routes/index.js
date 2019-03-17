@@ -1,20 +1,18 @@
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
-// import Navbar from '../components/Navbar';
-// import Home from '../components/Home';
-// import About from '../components/About';
-import Contact from '../components/Contact';
+import NavBarView from '../views/NavBarView';
 import LoginPage from '../views/LoginPage';
+import fetchAllPage from '../views/fetchAllPage';
+import Footer from '../components/Footer'
 
 
 const Routes = () =>  (
     <BrowserRouter>
       <div>
-        {/* <Navbar /> */}
-        {/* <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />*/}
-        <Route path="/contact" component={Contact} /> 
-        <Route exact path="/" component={LoginPage} />
+        <NavBarView />
+        <Route exact path="/" component={fetchAllPage} />
+        <Route exact path="/login" component={LoginPage} />
+        <Footer /> 
       </div>
     </BrowserRouter>
 )

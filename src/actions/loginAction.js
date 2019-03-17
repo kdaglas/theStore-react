@@ -26,6 +26,7 @@ const loginAction = loginData => dispatch => {
         });
         localStorage.setItem('token', data.token)
         localStorage.setItem('User_logged_in', data.User_logged_in)
+        window.location.reload()
       }
     })
     .catch(err => err);
