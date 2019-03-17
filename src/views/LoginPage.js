@@ -20,7 +20,7 @@ export class LoginPage extends Component {
         this.setState({
           message: nextProps.message
         });
-        nextProps.history.push("/contact");
+        nextProps.history.push("/");
       }
     else if (nextProps.error) {
       this.setState({
