@@ -12,11 +12,11 @@ const Footer = props => {
       </p>
       <p />
       <p>
-        <small>
+        
           <a href="#">Store Manager</a> is a web application that helps store
           owners <br />
           manage sales and product inventory records.
-        </small>
+        
       </p>
     </footer>
   );

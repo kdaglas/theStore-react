@@ -4,7 +4,15 @@ import FetchAll from "../components/fetchAllTable";
 import fetchAllAction from "../actions/fetchAllAction";
 
 export class fetchAllPage extends Component {
-  state = {};
+  
+  constructor(props){
+    super(props)
+    this.state = {
+      productid:-1
+    };
+  }
+
+
 
   componentWillMount = () => {
     const token = localStorage.getItem("token");
@@ -14,11 +22,14 @@ export class fetchAllPage extends Component {
     this.props.fetchAllAction();
   };
  
+  onProductSelect=(id)=>{
+   this.setState({productid:id});
+  }
 
   render() {
     return (
       <div>
-        <FetchAll products={this.props.products.products} />
+        <FetchAll onProductSelect={this.onProductSelect} selectedId={this.state.productid}  products={this.props.products.products} />
       </div>
     );
   }
