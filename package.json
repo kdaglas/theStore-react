@@ -16,7 +16,12 @@
     "lint:fix": "eslint . --fix --ignore-path .gitignore",
     "heroku-postbuild": "npm run build"
   },
-  "heroku-run-build-script": true,
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less)$": "identity-obj-proxy"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kdaglas/theStore-react.git"
@@ -32,6 +37,8 @@
     "@babel/cli": "^7.2.3",
     "dotenv": "^6.2.0",
     "dotenv-webpack": "^1.7.0",
+    "fetch-mock": "^7.3.1",
+    "node-fetch": "^2.3.0",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-redux": "^6.0.1",
@@ -66,6 +73,7 @@
     "jest": "^24.1.0",
     "mini-css-extract-plugin": "^0.5.0",
     "node-sass": "^4.11.0",
+    "redux-mock-store": "^1.5.3",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "uglifyjs-webpack-plugin": "^1.2.5",

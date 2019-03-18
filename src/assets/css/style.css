@@ -15,7 +15,6 @@ html, body{
 .desscription{
     float: left;
     margin: -55px 0;
-    /* margin: -55px 0 0 45px; */
 }
 .heading p{
     color: #211d1e;
@@ -25,7 +24,6 @@ html, body{
     float: right;
     padding: 15px;
     margin: 7px 0;
-    /* margin: 7px 45px 0 0; */
 }
 .holder{
     width: 650px;
@@ -211,20 +209,6 @@ form .input-field select option{
 
 /* ---- Most of the Tablets, Ipads ----- */
 @media (min-width: 768px) and (max-width: 1024px) {
-
-    /*    the design for the sign up page   */
-    /* .login_box{
-        width:90%;
-    }
-    .desscription{
-        margin: -55px 0 0 37px;
-    }
-    .desscription img{
-        height: 500px;
-    }
-    .fillups{
-        margin: 7px 37px 0 0;
-    } */
 
 }
 

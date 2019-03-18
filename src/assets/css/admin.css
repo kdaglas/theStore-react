@@ -1,9 +1,4 @@
 /*    ----    css for the background ----   */
-/* html, body{
-    background-image: url(../images/white.jpeg);
-    background-image: linear-gradient(to right, #00000081, #000000c0), url(../images/white.jpeg);
-} */
-
 
 /* ---- css for the head of the profile website ---- */
 .prof_navigation{
@@ -11,7 +6,6 @@
     margin:0 auto;
     padding:0;
 }
-
 
 /* ---- navigationbar layout ----  */
 .admin_ul{
@@ -44,7 +38,6 @@
 .left{
     float: left;
     width: 25%;
-    /* background-color: #ffffffd3; */
 }
 .admin_part{
     text-align: center;
@@ -81,7 +74,6 @@
     transition: 0.5s;
 }
 .table{
-    /* float: right; */
     width: 100%;
 }
 

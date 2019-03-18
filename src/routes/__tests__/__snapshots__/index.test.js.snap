@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The routes page should render all Routes without crushing 1`] = `ShallowWrapper {}`;
+
+exports[`The store should reach the store without crushing 1`] = `ShallowWrapper {}`;

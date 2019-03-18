@@ -1,10 +1,10 @@
-import ActionTypes from '../actions/ActionTypes';
+import ActionTypes from "../actions/ActionTypes";
 
 const initialState = {
-  message: '',
-  token: '',
+  message: "",
+  token: "",
   isSuccessful: false,
-  error: '',
+  error: ""
 };
 
 const authReducer = (state = initialState, action) => {
@@ -16,7 +16,7 @@ const authReducer = (state = initialState, action) => {
         message: action.payload.themessage,
         token: action.payload.token
       };
-      case ActionTypes.LOGIN_FAILED:
+    case ActionTypes.LOGIN_FAILED:
       return {
         ...state,
         isSuccessful: false,
